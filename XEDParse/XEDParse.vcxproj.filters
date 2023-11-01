@@ -1,0 +1,861 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{2f0f328d-a9c6-4597-a1d8-ce4e81aeedf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{707c317b-decc-492b-bbe9-b8fda3152b1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed">
+      <UniqueIdentifier>{cdbc7d5a-f168-44f5-b836-6ebe79665e9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\generated">
+      <UniqueIdentifier>{d187d986-8623-4753-abdc-8a11bdd3a0b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\generated\include-private">
+      <UniqueIdentifier>{3dec7aad-3e25-4a92-8b2c-80567b5fbcb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\include">
+      <UniqueIdentifier>{124a716d-a6d5-4890-9b13-91f096b38531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\include\private">
+      <UniqueIdentifier>{11b46b4e-46ae-4240-bd53-e583f29b64ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\include\public">
+      <UniqueIdentifier>{8fc7b160-1dba-457d-a622-1993dc1768bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\src">
+      <UniqueIdentifier>{2d445355-9308-4f80-ae56-b0b2d63d7819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\src\common">
+      <UniqueIdentifier>{563d6bdc-6822-4a31-a0bc-9d2556d0e82a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\src\dec">
+      <UniqueIdentifier>{b3ec9f93-df91-484d-846f-627d5550e251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\src\enc">
+      <UniqueIdentifier>{22287872-e61a-4943-9c07-fba5d4f653d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\src\encdec">
+      <UniqueIdentifier>{5a4eef7e-f803-4c14-8ca3-fc3ea15fbd00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xed\src\ild">
+      <UniqueIdentifier>{669ea9c8-0cf8-4dfa-bb61-790d63f5f16a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\BranchInst.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MnemonicTable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Operand.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OperandMem.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OperandSegSel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OpSize.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Parser.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\parsetest.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Prefix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Register.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\RegisterTable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Translator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Validator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\XEDParse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-ctype-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-ctype-map.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-element-type-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-element-xtype-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-storage.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-type-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-visibility-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-width-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-reg-class-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-reg-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-reg-role-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-syntax-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-address-width-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-attribute-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-build-defines.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-category-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-chip-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-convert-table-init.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-cpuid-bit-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-encoder-gen-defs.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-encoder-iforms.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-error-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-exception-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-extension-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-flag-action-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-flag-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-gen-table-defs.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-iclass-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-iform-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-iformfl-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-init-pointer-names.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-isa-set-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-machine-mode-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-nonterminal-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-accessors.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-action-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\xed-operand-convert-enum.h">
+      <Filter>xed\generated</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-chip-features-table.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-enc-groups.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-enc-operand-lu.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-enc-patterns.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-encoder.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-disp-bytes.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-disp-l1.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-disp-l2.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-disp-l3.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-easz-getters.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-easz.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-eosz-getters.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-eosz.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-getters.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-imm-bytes.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-imm-l1.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-imm-l2.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-imm-l3.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-modrm.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-scanners-base.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed-ild-scanners.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-chain-capture-lu.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-chain-capture.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-dynamic-part1-capture.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-nt-capture.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-op-chain-capture-lu.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-op-chain-capture.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-operand-lu.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-phash-lu-vv0.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-phash-lu-vv1.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-phash-lu-vv2.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-phash-lu-vv3.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-phash-vv0.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-phash-vv1.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-phash-vv2.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-phash-vv3.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\generated\include-private\xed3-phash.h">
+      <Filter>xed\generated\include-private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-chip-features-private.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-chip-modes-override.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-chip-modes.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-decode-profile.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-decode-supp.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-decoded-inst-private.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-disas-private.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-encode-isa-functions.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-encode-private.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-encode-tables.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-encode-types.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-flags-private.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-ild-private.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-inst-defs.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-inst-private.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-internal-header-2.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-internal-header.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-operand-type-info.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-portability-private.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-tables-decl.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-tables-extern.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-tables.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed-util-private.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed3-dynamic-decode.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\private\xed3-static-decode.h">
+      <Filter>xed\include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-agen.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-attributes.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-chip-features.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-common-defs.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-common-hdrs.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-cpuid-rec.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-decode.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-decoded-inst-api.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-decoded-inst.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-disas.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-encode.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-encoder-hl.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-flags.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-format-options.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-get-time.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-iform-map.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-ild.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-immdis.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-immed.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-init.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-inst.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-interface.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-isa-set.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-operand-action.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-operand-values-interface.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-patch.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-portability.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-print-info.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-reg-class.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-rep-prefix.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-state.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-types.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-util.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+    <ClInclude Include="xed\include\public\xed\xed-version.h">
+      <Filter>xed\include\public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BranchInst.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MnemonicTable.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Operand.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OperandMem.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OperandSegSel.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpSize.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Parser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParseTest.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Prefix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Register.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Translator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Validator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\XEDParse.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-ctype-map.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-element-type-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-element-xtype-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-type-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-visibility-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-width-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-reg-class-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-reg-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-reg-role-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-rep-map.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-syntax-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed3-operand-lu.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed3-phash-lu-vv0.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed3-phash-lu-vv1.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed3-phash-lu-vv2.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed3-phash-lu-vv3.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-address-width-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-attribute-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-attributes-init.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-attributes-list.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-category-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-chip-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-chip-features-table.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-classifiers.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-convert-table-init.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-cpuid-bit-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-cpuid-tables.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-enc-groups.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-encoder-0.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-encoder-1.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-encoder-2.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-encoder-3.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-encoder-4.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-encoder-iforms-init.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-encoder-init.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-encoder-order-init.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-encoder-pattern-lu.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-enc-operand-lu.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-enc-patterns.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-error-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-exception-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-extension-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-flag-action-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-flag-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-flags-actions.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-flags-complex.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-flags-simple.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-iclass-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-iclass-string.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-iform-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-iformfl-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-iform-map-init.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-iform-max.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-ild-disp-l3.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-ild-easz.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-ild-eosz.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-ild-imm-l3.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-init-inst-table.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-init-inst-table-0.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-init-inst-table-data.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-init-operand-data.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-init-operand-sequences.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-init-operand-type-mappings.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-init-pointer-names.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-init-reg-class.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-init-width.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-isa-set-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-machine-mode-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-nonterminal-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-accessors.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-action-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-convert-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-convert-init.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\generated\xed-operand-ctype-enum.c">
+      <Filter>xed\generated</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-chip-modes-override.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-chip-modes.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-cpuid.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-flags.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-immdis.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-immed.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-init.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-isa-set.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-operand-action.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-operand-values-interface-repl.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-operand-values-interface.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-portability.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-reg-class.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-rep-prefix.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-state.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-table-sizes.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-util.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\common\xed-version.c">
+      <Filter>xed\src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed-agen.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed-chip-features.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed-decode.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed-decoded-init.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed-decoded-inst.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed-disas.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed-iform-map.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed-ild.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed-inst.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed3-dynamic-decode.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\dec\xed3-static-decode.c">
+      <Filter>xed\src\dec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\enc\xed-encode-isa-functions.c">
+      <Filter>xed\src\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\enc\xed-encode.c">
+      <Filter>xed\src\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\enc\xed-encoder-hl.c">
+      <Filter>xed\src\enc</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\encdec\xed-enc-dec.c">
+      <Filter>xed\src\encdec</Filter>
+    </ClCompile>
+    <ClCompile Include="xed\src\encdec\xed-patch.c">
+      <Filter>xed\src\encdec</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
